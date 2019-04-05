@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let eng = ["one", "tow", "three", "four", "five", "six", "seven", "eight"];
+        let viet = [1, 2, 3, 4, 5, 6, 7, 8,];
+        let value = prompt("Nhập từ muốn dịch: ");
+        let a = true;
+        let i = 0;
+        for (i = 0; i < eng.length; i ++) {
+            if (eng[i] == value) {
+                a = true;
+                break;
+            } else {
+                a = false;
+            }
+        }
+        console.log(i)
+
+        if(a) {
+            alert("Từ cần tìm là " + viet[i])
+        } else {
+            alert("Không có từ cần tìm")
+        }
+    </script>
+</body>
+</html>
